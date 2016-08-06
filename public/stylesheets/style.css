@@ -1,0 +1,134 @@
+body{
+	padding-top: 80px;
+}
+
+a{
+	cursor: pointer;
+}
+
+a:visited, a:active{
+	text-decoration: none;
+}
+
+h1{
+  text-align: center;
+}
+
+table{
+	margin-left: 0.5%;
+	width: 99%;
+}
+
+td{
+	width: 50%;
+}
+
+.pass-forget-link{
+	width: 35%;
+}
+
+.input-48{
+	width: 48%;
+}
+
+.max-width{
+	width: 100%;
+}
+
+.center{
+	text-align: center;
+}
+
+.error-page{
+	padding-top: 10%;
+	padding-bottom: 15%;
+	text-align: center;
+	height: 100%;
+}
+
+.error-page-content{
+	width: 50%;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  padding: 5px;
+  width: auto;
+}
+
+.form-group{
+	margin-right: 10px;
+}
+
+.navbar-form{
+	margin-right: 5px;
+}
+
+
+/*xs < 768*/
+/*
+@media screen and (max-width: 767px){
+	
+	#main-td{
+		display: none;
+	}
+}*/
+
+.form{
+	width: 90%;
+	margin: auto;
+	border-radius: 7px;
+}
+
+.form-titulo{
+	margin-top: 0px;
+	background: darkgray;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	font-weight: 100;
+	font-size: 30px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	border-bottom: 5px solid crimson;
+}
+
+.contenedor-inputs{
+	padding-top: 5px;
+	padding-bottom: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.input-form{
+	margin-bottom: 20px;
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 3px;
+	border: 1px solid darkgray;
+}
+
+.btn-enviar{
+	padding: 5px 40px;
+	font-size: 20px;
+}
+
+	.btn-enviar:active{
+		transform: scale(1.05);
+	}
+
+.main-div{
+	width: 100%;
+	height: 450px;
+	float: left;
+	background-image: url("http://previews.123rf.com/images/dorian2013/dorian20131401/dorian2013140100002/25375288-Viajes-collage-tur-stico-con-atracciones-mundiales-y-maleta-Foto-de-archivo.jpg");
+	background-repeat: repeat;
+	background-size: 100%;
+}

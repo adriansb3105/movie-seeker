@@ -1,0 +1,86 @@
+doctype html
+html(lang="es")
+	head
+		title= title
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css")
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
+		link(href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet")
+		link(rel="stylesheet" href="/stylesheets/style.css")
+		//link(href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css')
+		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1")
+		meta(charset="utf-8")
+	body
+		header
+			nav(class="navbar navbar-default navbar-fixed-top navbar-inverse")
+				.container-fluid
+					.navbar-header
+						button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-icon")
+							span(class="sr-only") Menú
+							span(class="icon-bar")
+							span(class="icon-bar")
+							span(class="icon-bar")
+
+						a(href="/" class="navbar-brand")
+							img(src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" alt="logo")
+
+					.collapse.navbar-collapse#menu-icon
+						ul(class="nav nav-tabs nav-justified")
+							li.active#activa
+								a(href="" id="pedido-btn") Hacer pedido
+							li
+								a(href="" id="chat-btn") Chat directo
+							li
+								a(href="" id="historial-btn") Historial
+							li
+								a(href="" id="sugerencias-btn") Sugerencias
+							li
+								a(href="" id="editar-btn") Editar perfil
+							li
+								//a(href="/logout" id="salir-btn") Salir
+								a(id="salir-btn") Salir
+						//
+							li(class="dropdown")
+								a(href="" class="dropdown-toggle" data-toggle="dropdown" role="button") Dropdown
+									span(class="caret")
+
+								ul(class="dropdown-menu")
+									li
+										a(href="#") Item #1
+									li
+										a(href="#") Item #2
+									li(class="divider")
+									li
+										a(href="#") Item #3
+
+		section
+			.container#cont
+				div(class="jumbotron " id="chat-div")
+					h1 Chat
+					p Este es el div de chat
+
+				div(class="jumbotron " id="pedido-div")
+					h1 Pedido
+					p Este es el div de pedido
+
+				div(class="jumbotron " id="historial-div")
+					h1 Historial
+					p Este es el div de historial
+
+				div(class="jumbotron " id="sugerencias-div")
+					h1 Sugerencias
+					p Este es el div de sugerencias
+
+				div(class="jumbotron " id="editar-div")
+					h1 Editar
+					p Este es el div de editar
+
+		footer
+			.container
+				hr
+				small
+					p(class="help-block") &copy; Hecho con 
+						span(class="glyphicon glyphicon-heart" aria-hidden="true")
+
+		script(src="http://code.jquery.com/jquery-2.1.1.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")
+		script(src="/javascripts/main.js")

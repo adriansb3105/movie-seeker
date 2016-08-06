@@ -1,0 +1,47 @@
+extends layout
+block content
+	table
+		tr
+			td(rowspan="2" class="hidden-xs")
+				.main-div
+			td
+				//nav(class="nav navbar-nav navbar-right")
+				form(action="/users/login" class="form form-inline navbar-form" role="form")
+					h2(class="form-titulo") Ingresar
+					.form-group
+						label(class="sr-only help-block" for="user") Usuario o Correo
+						input(id="user" type="text" class="form-control" placeholder="Usuario o Correo")
+					.form-group
+						label(class="sr-only help-block" for="pass") Contraseña
+						input(id="pass" type="password" class="form-control" placeholder="Contraseña")
+					.form-group
+						button(class="btn btn-primary" type="submit") Entrar
+					a(class="pass-forget-link help-block" href="/reset_password") ¿Olvidó su contraseña?
+		tr
+			td
+
+				//- var a = errors
+				//#a
+				//	if a
+				//		each val in a
+				//			.alert.alert-danger #val
+
+				form(action="/" method="post" class="form")
+					h2(class="form-titulo") Crea una cuenta
+					.contenedor-inputs
+						label(class="sr-only input-48" for="name") Nombre
+						label(class="sr-only input-48" for="lastname") Apellidos
+						input(type="text" name="name" placeholder="Nombre" class="input-form input-48")
+						input(type="text" name="lastname" placeholder="Apellidos" class="input-form input-48")
+						label(class="sr-only max-width" for="email") Correo
+						input(type="email" name="email" placeholder="Correo" class="input-form max-width")
+						label(class="sr-only max-width" for="email2") Verifique el correo
+						input(type="email" name="email2" placeholder="Verifique el correo" class="input-form max-width")
+						label(class="sr-only input-48" for="username") Usuario
+						label(class="sr-only input-48" for="password") Contraseña
+						input(type="text" name="username" placeholder="Usuario" class="input-form input-48")
+						input(type="password" name="password" placeholder="Contraseña" class="input-form input-48")
+						label(class="sr-only max-width" for="phone") Teléfono
+						input(type="text" name="phone" placeholder="Teléfono" class="input-form max-width")
+						button(type="submit" class="btn btn-primary btn-enviar") Registrar
+	//script(src="/javascripts/")
